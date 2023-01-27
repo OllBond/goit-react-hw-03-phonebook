@@ -52,6 +52,7 @@ export class App extends Component {
       // і у value inputa потрапляє пуста стока
       return { contacts: [newContact, ...contacts] };
     });
+    return true;
   };
   removeContact = id => {
     this.setState(({ contacts }) => {
